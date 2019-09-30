@@ -12,8 +12,8 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-        <header class="d-flex justify-content-between align-items-center p-3">
+<body class="container">
+        <header class="navbar">
             <div id="logo">
                 <h1>
                     <?php 
@@ -22,11 +22,51 @@
                 </h1>
             </div>
             <nav>
-                <ul class="nav d-flex justify-content-between">
-                    <li class="nav-item">Cursos</li>
-                    <li class="nav-item">Login</li>
-                    <li class="nav-item">Cadastrar</li>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastrar</a>
+                    </li>
                 </ul>
         </header>
+        <main>
+            <section class="container mt-4">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3 card text-center">
+                    <h5 class="card-title">Título do card</h5>
+                    <img class="card-img-top" src="img/img-1.svg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <p class="card-text">R$15,00</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            
+            
+                <div class="col-lg-3 card text-center">
+                    <h5 class="card-title">Título do card</h5>
+                    <img class="card-img-top" src="img/img-1.svg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <p class="card-text">R$15,00</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            
+            
+                <div class="col-lg-3 card text-center">
+                    <h5 class="card-title">Título do card</h5>
+                    <img class="card-img-top" src="img/img-1.svg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <p class="card-text">R$15,00</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
 </body>
 </html>
