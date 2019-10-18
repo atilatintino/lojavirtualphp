@@ -5,21 +5,16 @@ $erros = [];
 
 //criando funções de validação
 function validaNome($nome){
-    if (strlen($nome) == 0){
-        global $erros;
-        array_push($erros, "Necessário o preenchimento do campo nome");
+    global $erros;
+    if( strlen($nome) == 0){
+        array_push($erros, 
+        "Preencha o nome corretamente");
     }
 }
 
-function validaCpf($cpf){
-    if (strlen($cpf) != 11){
-        global $erros;
-        array_push($erros, "Cpf incorreto");
+function validaCPF($cpf){
+    global $erros;
+    if(strlen($cpf) != 11){
+        array_push($erros, "Preencha o número do CPF corretamente!");
     }
 }
-
-/* $teste = "";
-validaNome($teste)."<br>";
-validaCpf($teste)."<br>";
-var_dump($erros); */
-?>
